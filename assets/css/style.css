@@ -1,0 +1,61 @@
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.bg-deepblue{
+  background: #101b37;
+}
+.bg-pink{
+  background: #5d327a;
+}
+.bg-pink2{
+  background: #df3272;
+}
+/* ************************** */
+nav select{
+  background: silver;
+  color: #fff;
+  border: none;
+}
+.navbar .active{
+  color: #df3272 !important;
+}
+/* ********************* */
+/* banner section start */
+.banner{
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nav-pills .nav-link{
+  color: #fff;
+  background: #4b3473;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #df3272;
+}
+/*
+ banner section end */
+
+ /* fun section start */
+ .fun{
+  color: #fff;
+  background: url(../img/fun.jpg);
+  /* background: linear-gradient(rgba(0,0,0,0.7) rgba(0,0,0,0.7)) url(../img/fun.jpg); */
+  background-size: cover;
+  background-position: center;
+ }
+ /* fun section end */
+ /* Destination section start */
+ .dest{
+  background-color: #4b3473;
+ }
+ .dest p span{
+  color: #e09b06;
+ }
+ /* Destination section end */
