@@ -7,6 +7,12 @@ p{
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style:  none;
+}
 .bg-deepblue{
   background: #101b37;
 }
@@ -59,3 +65,9 @@ nav select{
   color: #e09b06;
  }
  /* Destination section end */
+ /* estimate Section start */
+ .estimate{
+  color: #fff;
+  background: #7474f8;
+ }
+ /* estimate Section end */
