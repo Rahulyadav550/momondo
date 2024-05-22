@@ -11,7 +11,7 @@
 <body>
   <!-- Header section start -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-deepblue">
+    <nav class="navbar navbar-expand-lg bg-blue">
       <div class="container">
         <a class="navbar-brand text-white" href="javascript:void()"><img src="./assets/img/logo.png" alt="logo">
         </a>
@@ -33,7 +33,7 @@
               <a class="nav-link text-white" href="javascript:void()">Trip Finder</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link text-white" href="javascript:void()">Inpiration</a>
+              <a class="nav-link text-white" href="javascript:void()">Inspiration</a>
              </li>
           </ul>
           <form class="d-lg-flex" role="search">
@@ -55,314 +55,216 @@
   </header>
   <!-- Header section end -->
     <!-- Banner section start -->
-    <div class="banner">
+    <section class="banner position-relative">
       <div class="container">
         <div class="row">
-          <div class="main-content my-lg-5 my-3 text-center text-sm-start">
+          <div class="col-sm-9 col-lg-7 text-white ms-1 position-absolute top-15">
             <h1 class="fw-normal">"The Best place to find <br>the  cheapest airfare"</h1>
-            <h2>- every single time</h2>
+            <p class="fw-bold fs-1 mt-4">
+              - every single time
+            </p>
           </div>
-          <div class="mt-5 mb-3 bg-pink p-2">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-plane-departure"></i> Flights</button>
-              </li>
-              <li class="nav-item mx-2" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotel</button>
-                
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-car"></i> Cars</button>
-              </li>
-        
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Flights
-                <form >
-                  <div class="row g-3 d-flex align-item-center">
-                    <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="Enter Origin City" aria-label="City">
-                    </div> <div class="col-md-3">
-                      <input type="text" class="form-control" placeholder="Enter Destination City" aria-label="City">
+        </div>
+        <div class="row">
+          <div class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 py-1 bg-danger3 rounded">
+            <nav class="mb-2">
+              <div class="nav nav-tabs border-0 border-0 text-white  btn-width-80 bg-danger3" id="nav-tab" role="tablist">
+                <button class="nav-link rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                  <i class="fa-solid fa-plane-departure"></i> Flights
+                </button>
+                <button class="nav-link rounded-0  border-0 text-white mx-1 py-1 btn-width-80 bg-danger3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                  <i class="fa-solid fa-hotel"></i>  Hotels
+                </button>
+                <button class="nav-link rounded-0  border-0 text-white  btn-width-80 bg-danger3" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                  <i class="fa-solid fa-car"></i> Cars
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <form action="">
+                  <div class="row g-1">
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="text" class="form-control" placeholder="Enter Origin City" aria-label="origin">
                     </div>
-                    <div class="col-md-2">
-                      <input type="date" class="form-control" placeholder="State" aria-label="State">
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="text" class="form-control" placeholder="Enter Destination City" aria-label="destination">
                     </div>
-                    <div class="col-md-2">
-                      <input type="date" class="form-control" placeholder="State" aria-label="State">
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="date" class="form-control" placeholder="Last name" aria-label="sdate">
                     </div>
-                    <div class="col-md">
-                      <select class="form-select">
-                        <option value="1pass">1 Passenger</option>
-                        <option value="2pass">2 Passenger</option>
-                        <option value="3pass">3 Passenger</option>
-                        <option value="4pass">4 Passenger</option>
-                        <option value="5pass">5 Passenger</option>
-                        <option value="6pass">6 Passenger</option>
-                      </select>
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="date" class="form-control" placeholder="Last name" aria-label="edate">
                     </div>
-                     <div class="col-md">
-                      <button class="btn btn-danger rounded circle py-4">Search</button>
+                    <div class="col-sm-6 col-lg-2">
+                      <input type="text" class="form-control" placeholder="Passenger" aria-label="passenger">
+                    </div>
+                    <div class="col-sm-6 col-lg-1">
+                      <input type="button" class="form-control circle" value="search" aria-label="search">
                     </div>
                   </div>
-                  </form>
+                </form>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Hotel
-                
-              </div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Cars</div>
-              
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+            </div>
+
           </div>
-          
         </div>
       </div>
-    </div>
+    <section>
     <!-- Banner section end-->
-    <!-- fun section start-->
-    <section class="fun py-5">
+    <!-- Fun section start -->
+    <section class="fun bg-dark py-5 text-white">
       <div class="container">
-        <h4 class="text-center mb-5">SOME FUN WE COVERED</h4>
-        <div class="row text-center">
-         
-         <div class="col-6 col-sm-4 col-lg-2 mb-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div>
-            <div class="bg-black bg-opacity-50 p-4 border border black ">
-              <i class="fa-solid fa-person-biking fs-1 mb-2"></i>
-              <p class="fw-bold">5670 M</p>
-              <p>Cycling Track</p>
-             </div>
-          </div>
+        <div class="row">
+          <h4 class="text-center fw-bold mt-3 mb-4">SOME FUN WE COVERED</h4>
         </div>
         
+        <div class="row">
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
+           </div>
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
+           <div class="col-lg-2 col-md-4 col-6">
+            <div class="bg-dark py-4 px-3 my-2 text-center">
+              <i class="fa-solid fa-bicycle fs-"></i> mb-
+              <p class="few-bold">5670 M</p>
+              <p>CYCLING TRACK</p>
+            </div>
         </div>
       </div>
     </section>
-    <!-- fun section end-->
-
-    <!-- Scubcriber section start -->
-    <!-- Scubcriber section end -->
-    
-    <!-- Deztination sextion start -->
-    <div class="dest py-5">
+    <!-- Fun section end -->
+    <!--Newslater section start  -->
+    <div class="newslater py-5">
       <div class="container">
         <div class="row">
-          <h3 class="text-center text-white mb-4">POPULAR Destination</h3>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <div class="card">
-              <img src="./assets/img/rome.jpg" class="card-img-top" alt="rome">
-              <div class="card-body">
-                <p class="fw-bold mb-3">
-                  <span>$999</span> Rome, Florance & Vince 9-night vacation with Air
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa laudantium a quos beatae non.</p>
-              </div>
-            </div>
-          </div>
+         <div class="col-lg-4"></div>
+         <div class="col-lg-8 text-center text-white">
+          <h3 class="fw-bold mt-5">SUBSCRIBE FOR OUR TRAVEL NEWSLATTER</h3>
+            <p class="mt-5 mx-5 px-5">
+              Join our community of our 3,00,000 global readers who receive emails filled with news, promotions and other good stuff from G Adventures.
+            </p>
+            <form >
+              <input type="email" placeholder="Enter your email address...." class="w-50 bg-opacity-25 border border-white text-white">
+              <input type="submit" value="SEARCH">
+            </form>
+         </div>
         </div>
       </div>
     </div>
-    <!-- Deztination sextion end -->
-    <!-- Estimate section Start -->
-    <section class="estimate py-5 position-relative">
-      <img src="./assets/img/rome1.png" alt="rome1" class="position-lg-absolute end-0 top- w-10 h-100 d-none d-lg-block">
+    <!--Newslater section end  -->
+    <!-- Destination section start  -->
+    <div class="destination py-5 bg-purple">
+      <div class="container">
+        <div class="row mb-4">
+          <h3 class="fw-bold text-center text-white">POPULAR DESTINATION</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest1">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-orange">$999</span>
+                  Rome, Florance & Venice 9-Night Vacation  w/Air
+                </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest1">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-orange">$999</span>
+                  Rome, Florance & Venice 9-Night Vacation  w/Air
+                </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+              </div>
+            </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest1">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-orange">$999</span>
+                  Rome, Florance & Venice 9-Night Vacation  w/Air
+                </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card border-3 m-4 mx-sm-0">
+              <img src="./assets/img/dest1.jpg" class="card-img-top" alt="dest1">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-orange">$999</span>
+                  Rome, Florance & Venice 9-Night Vacation  w/Air
+                </p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+    </div>
+    <!-- Destination section end -->
+    <!-- Estimate section start -->
+    <section class="estimate py-5 bg-danger position-relative">
+      <div class="position-absolute bottom-0 end-0">
+          <img src="./assets/img/estimate.jpg" alt="estimate
+          ">
+      </div>
       <div class="container">
         <div class="row">
-          <h2>GET A QUICK ESTIMATE</h2>
+          <h3 class="fw-bold text-white">GET A QUICK ESTIMATE</h3>
+          <p class="fw-bold text-white">GET A PROFFESSIONAL HELP</p>
+          <hr size="10px" style="width: 100px; color: #fff;">
+        </div>
+        <div class="row">
+          <input type="text" placeholder="travel" class="col-lg-2 col-sm-4 col-12 py-2">
+          <input type="text" placeholder="travel" class="col-lg-2 col-sm-4 col-12 py-2">
+          <input type="text" placeholder="travel" class="col-lg-2 col-sm-4 col-12 py-2">
+          <input type="text" placeholder="travel" class="col-lg-2 col-sm-4 col-12 py-2">
+          <input type="text" placeholder="travel" class="col-lg-2 col-sm-4 col-12 py-2 bg-warning">
         </div>
       </div>
     </section>
     <!-- Estimate section end -->
-
-    <!-- blog section start -->
-    <section class="blog py-4">
-        <div class="conatiner">
-          <h2 class="text-center">LATEST BLOG</h2>
-          <p class="text-center my-4 px-sm-5 mx-sm-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quaerat magni, saepe soluta iusto quod vero perferendis, laudantium quis quam illum molestiae? Maxime, illum sint?
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-4">
-                  <img src="./assets/img/blog1.jpeg" alt="blog1" class="img-fluid h-100">
-                </div>
-                  <div class="col-8">
-                    <p>feb 01 2016</p>
-                    <h3 class="mb-4">10 THIMGS TO DO BEFORE TRAVEL</h3>
-                    <p class="text-align: justify;">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium nostrum ipsam, culpa totam voluptatibus odio labore fugiat ipsa adipisci.
-                    </p>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-4">
-                  <img src="./assets/img/blog1.jpeg" alt="blog1" class="img-fluid h-100">
-                </div>
-                  <div class="col-8">
-                    <p>feb 01 2016</p>
-                    <h3 class="mb-4">10 THIMGS TO DO BEFORE TRAVEL</h3>
-                    <p class="text-align: justify;">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium nostrum ipsam, culpa totam voluptatibus odio labore fugiat ipsa adipisci.
-                    </p>
-                  </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- blog section end -->
-
-    <!-- Footer section start -->
-      <footer class="bg-dark py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Top Countries</h4>
-                </div>
-                <div class="col-md-6">
-                  <h4>Top Countries</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <h4>International Sities</h4>
-              <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </footer>
-    <!-- Footer section end -->
+   
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
